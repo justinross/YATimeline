@@ -36,23 +36,24 @@
           <p>First off, let me just point out that this script is in a very early form, and will probably need some tweaking. That said, if you're ready to go, just download and include the following in your HTML file (along with jQuery 1.7.2, of course):</p>
 
           <pre><code>
-            <script type="text/javascript" src="jquery.effects.core.js"></script>
-            <script type="text/javascript" src="jquery.yaTimeline.js"></script>
+            &lt;script type="text/javascript" src="jquery.effects.core.js"&gt;&lt;/script&gt;
+            &lt;script type="text/javascript" src="jquery.yaTimeline.js"&gt;&lt;/script&gt;
           </code></pre>
 
           <p>Then, just activate it on any container object:</p>
           <pre><code>
-            $(document).ready(function(){
-              $(".timeline").yaTimeline();
-            });            
+$(document).ready(function(){
+ $(".timeline").yaTimeline();
+});            
           </code></pre>
 
           <p>The container object just needs to be a block-level element with some stuff inside. Any child elements will be turned into slides. Each slide needs to have a data-label attribute, which should contain that slide's label button, like so:</p>
 
           <pre><code>
-            <div class="timeline">
-              <p data-label="June 2012">The June content</p>
-              <p data-label="July 2012">The July content</p>
+            &lt;div class="timeline"&gt;
+              &lt;p data-label="June 2012"&gt;The June content&lt;/p&gt;
+              &lt;p data-label="July 2012"&gt;The July content&lt;/p&gt;
+            &lt;/div&gt;
           </code></pre>
         </section>
 
